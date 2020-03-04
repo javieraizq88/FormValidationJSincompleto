@@ -65,7 +65,7 @@ function validar () {
         form.City.classList.add("is-valid");
     }
 
-    if (!form.inputState.value== "Choose"){
+    if (!form.inputState.value.trim().length > 0){
         enviar = false;
         form.inputState.focus ();
         form.inputState.classList.add("is-invalid");
